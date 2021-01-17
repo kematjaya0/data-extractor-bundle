@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+        
+    kmj.extractor_manager:
+        alias: Kematjaya\DataExtractorBundle\Manager\ExtractorManagerInterface
+        public: true

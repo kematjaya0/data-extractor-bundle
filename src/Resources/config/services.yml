@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        
+    Kematjaya\DataExtractorBundle\Manager\ExtractorManagerInterface:
+        class: Kematjaya\DataExtractorBundle\Manager\ExtractorManager
+            
+    Kematjaya\DataExtractorBundle\Twig\ExtractorExtension:
+        tags: ['twig.extension']
